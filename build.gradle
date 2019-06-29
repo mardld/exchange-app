@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id "org.springframework.boot" version "1.5.12.RELEASE"
+}
+
+group 'mardld'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly "org.projectlombok:lombok:1.+"
+    compile 'org.springframework.boot:spring-boot-starter'
+    annotationProcessor "org.projectlombok:lombok:1.+"
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jar.archiveName = "exchange-app.jar"
